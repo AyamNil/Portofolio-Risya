@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(255, 255, 255);
+    color: rgb(57, 57, 56)!important;
+}
+
+nav{
+    height: 100px !important;
+    font-size: 25px !important;
+    padding: 8px;
+
+    color: rgb(57, 57, 56) !important;
+}
+
+.about {
+    height: 1080px;
+    margin: 0;
+    padding: 0;
+    margin-top: 135px;
+    background-color: #e9e9e9;
+    margin-top: 20px;
+    }
+
+    .jumbotron{
+        margin-bottom: 150px!important;
+    }
+
+    .btn{
+        background-color: rgb(26, 26, 26)!important;
+        color: white!important;
+        width: 250px;
+    }
+    .btn:hover{
+        background-color: rgb(192, 192, 192)!important;
+        color: rgb(13, 13, 13)!important;
+    }
