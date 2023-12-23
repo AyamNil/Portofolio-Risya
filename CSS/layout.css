@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+
+}
+
 body{
     background-color: rgb(255, 255, 255);
     color: rgb(57, 57, 56)!important;
@@ -10,6 +15,17 @@ nav{
 
     color: rgb(57, 57, 56) !important;
 }
+.nav-item{
+    margin: 5px;
+}
+
+.logo{
+    height: 150px !important;
+    width: 150px !important;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
 
 .about {
     height: 1080px;
@@ -20,9 +36,6 @@ nav{
     margin-top: 20px;
     }
 
-    .jumbotron{
-        margin-bottom: 150px!important;
-    }
 
     .btn{
         background-color: rgb(26, 26, 26)!important;
@@ -32,4 +45,10 @@ nav{
     .btn:hover{
         background-color: rgb(192, 192, 192)!important;
         color: rgb(13, 13, 13)!important;
+    }
+
+    a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
     }

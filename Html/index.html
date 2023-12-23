@@ -20,16 +20,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="/Html/index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="#2">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="/Html/project.html">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact Me</a>
+          <a class="nav-link" href="/Html/contact.html">Contact Me</a>
         </li>
       </ul>
     </div>
@@ -38,7 +38,7 @@
 
 
 <body>
-  <section style="margin-bottom: 250px;" class="container d-flex justify-content-center align-item-center">
+  <section style="margin-bottom: 75px;" class="container d-flex justify-content-center align-item-center">
     <div data-aos="zoom-in">
       <div class="jumbotron">
         <div class="jumbotron my-8 p-5 mx-5 align-middle">
@@ -53,9 +53,50 @@
         </div>
       </div>
     </div>
+
   </section>
 
-  <section style="background-color: rgb(70, 70, 70);"
+  <section class="d-flex justify-content-center">
+    <div class="jumbotron">
+      <div class="jumbotron my-8 p-5 mx-5">
+        <div data-aos="fade-right"> <h1 class="fs-larger ">My Skill <span class="fw-bolder">as a computer science student</span></h1></div>
+       
+        <div data-aos="flip-up">
+          <div class="skills align-item-center">
+            <div class="row">
+            <div class="col">
+              <img src="/Assets/html2.svg" class="logo" alt="">
+            </div>
+            <div class="col">
+              <img src="/Assets/css.svg" class="logo" alt="">
+            </div>
+            <div class="col">
+              <img src="/Assets/javascript.svg" class="logo" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img src="/Assets/laravel.svg" class="logo" alt="">
+            </div>
+            <div class="col">
+              <img src="/Assets/c.svg" class="logo" alt="">
+            </div>
+            <div class="col">
+              <img src="/Assets/swift.svg" class="logo" alt="">
+            </div>
+          </div>
+        </div>
+        
+        
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <section id="2" style="background-color: rgb(70, 70, 70);"
     class="About d-flex justify-content-space-between align-item-center p-5">
     <div class="d-flex" data-aos="fade-up">
       <div class="text-white p-4 ">
@@ -65,16 +106,18 @@
           robust skillset in design and asset creation. My expertise spans both web development and mobile app
           development, ensuring a holistic approach to crafting visually stunning and functionally impressive digital
           experiences.</h3>
-          <button type="button" class="btn">
-            About Me
+          <a href="/Html/contact.html">
+          <button onclick="" type="button" class="btn">
+            Contact Me
           </button>
+        </a>
       </div>
-      <img src="/Assets/278541.jpg" style="max-width: 500px;" class="rounded float-start p-2" alt="...">
+      <img src="/Assets/278541.jpg" style="width: 650px;" class="img-fluid ps-2" alt="...">
     </div>
   </section>
 
 
-  <section class="Projects">
+  <section id="3" class="Projects">
     <div class="row aos-init aos-animate" data-aos="fade-up">
       <div class="col" style="margin-top: 135px">
         <h2>
@@ -87,7 +130,7 @@
       </div>
     </div>
     <hr>
-    <div class="py-2 row projects-item align-items-centerjustify-content-between">
+    <div class="py-2 row projects-item align-items-centerjustify-content-between OddsPane">
       <div class="col-md-6 aos-init aos-animate" data-aos="fade-right">
         <img src="/Assets/Screenshot 2023-12-14 at 21.39.46.png" alt="" class="ps-5 img-fluid">
       </div>
@@ -99,44 +142,43 @@
         </p>
         <a class="btn" role="button" href="https://github.com/AyamNil/Project-HCI">See Repository</a>
       </div>
+    </div>
+
+    <hr class="p-1">
+
+    <div class="py-2 row projects-item align-items-centerjustify-content-between">
+      <div class="col-md-6 aos-init aos-animate" data-aos="fade-right">
+        <img src="/Assets/Screenshot 2023-12-21 at 22.32.00.png" alt="" class="ps-5 img-fluid">
       </div>
+      <div style="padding: 5px;" class="col-md-5 text-center text-md-end aos-init aos-animate" data-aos="fade-left">
+        <h3>Piscis Aquarium</h3>
+        <p class="mt-4">
+          <b>Piscis Aquarium</b> is a online aquarium, website that shows the species lives in the aquarium. created using html, and css
+        </p>
+        <a class="btn" role="button" href="https://github.com/AyamNil/piscis">See Repository</a>
+      </div>
+    </div>
 
-      <hr class="p-1">
-      
-      <div class="py-2 row projects-item align-items-centerjustify-content-between">
-        <div class="col-md-6 aos-init aos-animate" data-aos="fade-right">
-          <img src="/Assets/Screenshot 2023-12-14 at 21.39.46.png" alt="" class="ps-5 img-fluid">
-        </div>
-        <div style="padding: 5px;" class="col-md-5 text-center text-md-end aos-init aos-animate" data-aos="fade-left">
-          <h3>Tanaka Guitar</h3>
-          <p class="mt-4">
-            <b>Tanaka Guitar</b> is a online guitar shop, that has several guitar choice and other guitar essentials.
-            This project is created with HTML, CSS, and Javascript. without any framework nor bootstrap.
-          </p>
-          <a class="btn" role="button" href="https://github.com/AyamNil/Project-HCI">See Repository</a>
-        </div>
-        </div>
+    <hr class="p-1">
 
-      <hr class="p-1">
+    <div class="py-2 row projects-item align-items-centerjustify-content-between">
+      <div class="col-md-6 aos-init aos-animate" data-aos="fade-right">
+        <img src="/Assets/Screenshot 2023-12-22 at 15.58.48.png" alt="" class="ps-5 img-fluid">
+      </div>
+      <div style="padding: 5px;" class="col-md-5 text-center text-md-end aos-init aos-animate" data-aos="fade-left">
+        <h3>SnapCat</h3>
+        <p class="mt-4">
+          <b>SnapCat</b> SnapCat is a social media platform created for cat lovers to post photos
+          of their cat. This is A group project for Web programming course created with laravel framework. 
+        </p>
+        <a class="btn" role="button" href="https://github.com/ZChronoss/web-programming-project">See Repository</a>
+      </div>
+    </div>
 
-      <div class="py-2 row projects-item align-items-centerjustify-content-between">
-        <div class="col-md-6 aos-init aos-animate" data-aos="fade-right">
-          <img src="/Assets/Screenshot 2023-12-14 at 21.39.46.png" alt="" class="ps-5 img-fluid">
-        </div>
-        <div style="padding: 5px;" class="col-md-5 text-center text-md-end aos-init aos-animate" data-aos="fade-left">
-          <h3>Tanaka Guitar</h3>
-          <p class="mt-4">
-            <b>Tanaka Guitar</b> is a online guitar shop, that has several guitar choice and other guitar essentials.
-            This project is created with HTML, CSS, and Javascript. without any framework nor bootstrap.
-          </p>
-          <a class="btn" role="button" href="https://github.com/AyamNil/Project-HCI">See Repository</a>
-        </div>
-        </div>
-
-      <hr class="p-1">
+    <hr class="p-1">
 
 
-      
+
   </section>
 
 
@@ -163,44 +205,38 @@
 
 
 
-<footer style="background-color: black !important; color: #c1c1c1!important" class="bg-body-tertiary text-center">
+  <footer style="background-color: black !important; color: #c1c1c1!important" class="bg-body-tertiary text-center">
 
-  <div class="container p-4">
+    <div class="container p-4">
 
-    <section class="mb-4">
+      <section class="mb-4">
 
-      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-facebook-f"></i
-      ></a>
-
-
-      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-twitter"></i
-      ></a>
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+            class="fab fa-facebook-f"></i></a>
 
 
-      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-google"></i
-      ></a>
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+            class="fab fa-twitter"></i></a>
 
 
-      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-instagram"></i
-      ></a>
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+            class="fab fa-google"></i></a>
 
 
-      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+            class="fab fa-instagram"></i></a>
 
-      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-github"></i
-      ></a>
-      
-    </section>
-    <span class="my-3">
-      Risya Emha Abdillah © 2023
-    </span>
+
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+            class="fab fa-linkedin-in"></i></a>
+
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+            class="fab fa-github"></i></a>
+
+      </section>
+      <span class="my-3">
+        Risya Emha Abdillah © 2023
+      </span>
   </footer>
 
 
