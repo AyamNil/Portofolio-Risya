@@ -52,3 +52,9 @@ nav{
         color: rgb(255, 255, 255);
         font-weight: bold;
     }
+
+   .Projects img{
+        border-radius: 5px;
+        box-shadow:  21px 21px 43px #bababa;
+    }
+    
