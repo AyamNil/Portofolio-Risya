@@ -1,17 +1,32 @@
 .contact-section {
-  min-height: 70vh;
+  min-height: 75vh;
   display: flex;
   align-items: center;
 }
 
 .contact-card {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-subtle);
-  border-radius: 16px;
-  padding: 3rem 2rem;
-  max-width: 600px;
+  background: var(--sk-card);
+  border: var(--sk-border-heavy);
+  border-radius: 0;
+  padding: 3.5rem 2.5rem;
+  max-width: 650px;
   margin: 0 auto;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--sk-shadow-lg);
+  transform: rotate(-1deg);
+  position: relative;
+}
+
+.contact-card::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%) rotate(2deg);
+  width: 140px;
+  height: 30px;
+  background: var(--sk-tape);
+  border: 1px dashed rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contact-options {
@@ -19,33 +34,48 @@
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .contact-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.85rem 1.5rem;
-  background: #f8fafc;
-  border: 1px solid var(--border-subtle);
-  border-radius: 10px;
-  color: var(--text-main);
+  gap: 0.85rem;
+  padding: 0.9rem 1.8rem;
+  background: var(--sk-white);
+  border: var(--sk-border);
+  border-radius: 0;
+  color: var(--sk-black);
   text-decoration: none;
-  font-weight: 500;
-  transition: all 0.2s ease;
+  font-family: var(--font-poster);
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: var(--sk-shadow);
+  transition: all 0.15s ease;
+}
+
+.contact-btn:nth-child(1) {
+  transform: rotate(-2deg);
+}
+
+.contact-btn:nth-child(2) {
+  transform: rotate(1deg);
+}
+
+.contact-btn:nth-child(3) {
+  transform: rotate(-1.5deg);
 }
 
 .contact-btn:hover {
-  border-color: var(--border-hover);
-  color: var(--accent);
-  background: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-sm);
+  background: var(--sk-red);
+  color: var(--sk-white);
+  transform: rotate(0deg) translate(-2px, -2px);
+  box-shadow: 9px 9px 0 var(--sk-black);
 }
 
 .contact-btn img {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   object-fit: contain;
 }
