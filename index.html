@@ -1,293 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Risya Emha Abdillah</title>
+  <title>Risya Emha Abdillah | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="CSS/layout.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/17118d186d.js" crossorigin="anonymous"></script>
 </head>
+<body>
 
-<nav class="navbar bg-white navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid ps-5">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#2">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#3">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact Me</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg site-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Risya Emha</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#publications">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8" data-aos="fade-up">
+          <span class="hero-badge">Computer Science &amp; InfoSec</span>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Risya Emha Abdillah</span>.
+            <div class="mt-2 fs-3 text-secondary">
+              Focused on <span id="typewriter" class="typewriter-text"></span><span class="typewriter-cursor">|</span>
+            </div>
+          </h1>
+          <p class="hero-subtitle">
+            Master's student at BINUS University researching hybrid ensemble models for multiclass network intrusion detection, with background in web and iOS development.
+          </p>
+          <div class="cta-group">
+            <a href="#projects" class="btn-modern-primary">View Projects</a>
+            <a href="contact.html" class="btn-modern-outline">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Running Text / Marquee -->
+  <div class="marquee-container" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">Network Intrusion Detection <span class="dot"></span></span>
+      <span class="marquee-item">Hybrid Ensemble Models <span class="dot"></span></span>
+      <span class="marquee-item">Information Security <span class="dot"></span></span>
+      <span class="marquee-item">Web Development <span class="dot"></span></span>
+      <span class="marquee-item">iOS Development <span class="dot"></span></span>
+      <span class="marquee-item">Laravel &amp; PHP <span class="dot"></span></span>
+      <span class="marquee-item">Swift &amp; C <span class="dot"></span></span>
+    </div>
+    <div class="marquee-track">
+      <span class="marquee-item">Network Intrusion Detection <span class="dot"></span></span>
+      <span class="marquee-item">Hybrid Ensemble Models <span class="dot"></span></span>
+      <span class="marquee-item">Information Security <span class="dot"></span></span>
+      <span class="marquee-item">Web Development <span class="dot"></span></span>
+      <span class="marquee-item">iOS Development <span class="dot"></span></span>
+      <span class="marquee-item">Laravel &amp; PHP <span class="dot"></span></span>
+      <span class="marquee-item">Swift &amp; C <span class="dot"></span></span>
     </div>
   </div>
-</nav>
 
+  <section class="section-wrapper">
+    <div class="container">
+      <div class="section-label">Technical Skills</div>
+      <h2 class="section-title">Tools &amp; Languages</h2>
 
-<body>
-  <section style="margin-bottom: 75px;" class="container d-flex justify-content-center align-item-center">
-    <div data-aos="zoom-in">
-      <div class="jumbotron">
-        <div class="jumbotron my-8 p-5 mx-5 align-middle">
-          <h1 class="fs-larger ">Hello <span class="fw-bolder">I'm Risya Emha Abdillah</span></h1>
-          <h2>I am A
-            <span style="color: brown;" class="txt-type fw-bold" data-wait="3000"
-              data-words='["Front-End Developer.","Web Developer", "UI/UX Designer."]'></span>
-          </h2>
-          <h3>
-
-          </h3>
+      <div class="tech-grid" data-aos="fade-up">
+        <div class="tech-card">
+          <img src="Assets/html2.svg" alt="HTML5">
+          <span>HTML5</span>
+        </div>
+        <div class="tech-card">
+          <img src="Assets/css.svg" alt="CSS3">
+          <span>CSS3</span>
+        </div>
+        <div class="tech-card">
+          <img src="Assets/javascript.svg" alt="JavaScript">
+          <span>JavaScript</span>
+        </div>
+        <div class="tech-card">
+          <img src="Assets/laravel.svg" alt="Laravel">
+          <span>Laravel</span>
+        </div>
+        <div class="tech-card">
+          <img src="Assets/c.svg" alt="C">
+          <span>C</span>
+        </div>
+        <div class="tech-card">
+          <img src="Assets/swift.svg" alt="Swift">
+          <span>Swift</span>
         </div>
       </div>
     </div>
-
   </section>
 
-  <section class="d-flex justify-content-center">
-    <div class="jumbotron">
-      <div class="jumbotron my-8 p-5 mx-5">
-        <div data-aos="fade-right"> <h1 class="fs-larger ">My Skill <span class="fw-bolder">as a computer science student</span></h1></div>
-       
-        <div data-aos="flip-up">
-          <div class="skills align-item-center">
-            <div class="row">
-            <div class="col">
-              <img src="Assets/html2.svg" class="logo" alt="">
+  <section id="about" class="section-wrapper">
+    <div class="container">
+      <div class="section-label">Background</div>
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about-card" data-aos="fade-up">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-4 text-center">
+            <img src="Assets/278541.jpg" alt="Risya Emha Abdillah" class="about-avatar img-fluid">
+          </div>
+          <div class="col-lg-8">
+            <h3 class="h4 mb-3">Computer Science Master's Student</h3>
+            <p class="text-secondary mb-3">
+              I study Computer Science at BINUS University with an emphasis on Information Security Management. My current research evaluates hybrid ensemble models to improve multiclass network intrusion detection accuracy.
+            </p>
+            <p class="text-secondary mb-4">
+              Alongside research, I build web and iOS applications focusing on clean code, responsive layouts, and reliable system architecture.
+            </p>
+            <a href="contact.html" class="btn-modern-primary">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section-wrapper">
+    <div class="container">
+      <div class="section-label">Career</div>
+      <h2 class="section-title">Work Experience</h2>
+
+      <div class="timeline-tree">
+        <div class="timeline-node" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Full Stack Engineer</h3>
+              <span class="timeline-period">Jan 2026 - Present &bull; 10 mos</span>
             </div>
-            <div class="col">
-              <img src="Assets/css.svg" class="logo" alt="">
+            <div class="timeline-company">
+              <i class="fas fa-building"></i> PT. Fortuna Mediatama - ICT &bull; Contract
             </div>
-            <div class="col">
-              <img src="Assets/javascript.svg" class="logo" alt="">
+            <div class="timeline-meta">
+              Tangerang, Banten, Indonesia &bull; On-site
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <img src="Assets/laravel.svg" class="logo" alt="">
+        </div>
+
+        <div class="timeline-node" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3 class="timeline-role">SecOps Intern</h3>
+              <span class="timeline-period">Nov 2025 - Jan 2026 &bull; 3 mos</span>
             </div>
-            <div class="col">
-              <img src="Assets/c.svg" class="logo" alt="">
+            <div class="timeline-company">
+              <i class="fas fa-shield-alt"></i> PT Ramayana Lestari Sentosa, Tbk &bull; Internship
             </div>
-            <div class="col">
-              <img src="Assets/swift.svg" class="logo" alt="">
+            <div class="timeline-meta">
+              Jakarta, Indonesia &bull; On-site
+            </div>
+            <p class="timeline-desc">
+              Conducted security assessments, implemented XDR (Wazuh) for active response, log monitoring, security compliance assessments, and file integrity monitoring.
+            </p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">SIEM</span>
+              <span class="timeline-tag">Wazuh</span>
+              <span class="timeline-tag">XDR</span>
+              <span class="timeline-tag">Log Monitoring</span>
             </div>
           </div>
         </div>
-        
-        
+
+        <div class="timeline-node" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Full Stack Engineer</h3>
+              <span class="timeline-period">Jul 2024 - Aug 2024 &bull; 2 mos</span>
+            </div>
+            <div class="timeline-company">
+              <i class="fas fa-building"></i> PT. Fortuna Mediatama - ICT &bull; Internship
+            </div>
+            <div class="timeline-meta">
+              Tangerang, Banten, Indonesia &bull; On-site
+            </div>
+            <div class="timeline-tags">
+              <span class="timeline-tag">MySQL</span>
+              <span class="timeline-tag">MVVM</span>
+              <span class="timeline-tag">Full Stack</span>
+            </div>
+          </div>
         </div>
 
+        <div class="timeline-node" data-aos="fade-up" data-aos-delay="300">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Frontend Developer</h3>
+              <span class="timeline-period">Feb 2024 - Jun 2024 &bull; 5 mos</span>
+            </div>
+            <div class="timeline-company">
+              <i class="fas fa-laptop-code"></i> PT. Pharos Indonesia &bull; Internship
+            </div>
+            <div class="timeline-meta">
+              Jakarta, Indonesia &bull; On-site &bull; Pharos Indonesia X Kampus Merdeka Batch 6
+            </div>
+            <div class="timeline-tags">
+              <span class="timeline-tag">React.js</span>
+              <span class="timeline-tag">Front-End Design</span>
+              <span class="timeline-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
   </section>
 
+  <section id="publications" class="section-wrapper">
+    <div class="container">
+      <div class="section-label">Research</div>
+      <h2 class="section-title">Published Papers</h2>
 
-  <section id="2" style="background-color: rgb(70, 70, 70);"
-    class="About d-flex align-item-center p-5">
-    <div class="row" data-aos="fade-up">
-      <div class="text-white p-4 col">
-        <h1 style="font-size: 75px !important;" class="fw-bolder mb-2">Get To Know Me</h1>
-        <br>
-        <h4><span class="fw-bold">Hello!</span> 'm Risya, a Computer Science master's student at BINUS University focusing on Information Security Management. I am currently researching hybrid ensemble models for multiclass network intrusion detection while bringing experience in web and iOS development to build secure, user-centered applications.</h3>
-          <a href="contact.html">
-          <button onclick="" type="button" class="btn">
-            Contact Me
-          </button>
-        </a>
+      <div class="row g-4">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="publication-card">
+            <span class="pub-venue-badge">
+              <i class="fas fa-file-alt"></i> IEEE Conference (2024)
+            </span>
+            <h3 class="pub-title">
+              Implementation of Artificial Intelligence on Air Traffic Control - A Systematic Literature Review
+            </h3>
+            <p class="pub-authors">
+              <strong>Risya Emha Abdillah</strong>, Henry Moenaf, Luthfi Fadullah Rasyid, Said Achmad, Rhio Sutoyo
+            </p>
+            <p class="pub-meta">
+              Bina Nusantara University &bull; IEEE Xplore Document: 10418350
+            </p>
+            <div>
+              <a href="https://ieeexplore.ieee.org/abstract/document/10418350/" target="_blank" rel="noopener noreferrer" class="btn-modern-primary">
+                View on IEEE Xplore
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="publication-card">
+            <span class="pub-venue-badge">
+              <i class="fas fa-file-alt"></i> IEEE Conference (2026)
+            </span>
+            <h3 class="pub-title">
+              Multivariate Air Pollutant Forecasting in Jakarta using Hybrid LSTM-GRU and Sentiment Analysis
+            </h3>
+            <p class="pub-authors">
+              Wilbert Coandadiputra, Amalia Zahra, <strong>Risya Emha Abdillah</strong>
+            </p>
+            <p class="pub-meta">
+              BINUS Graduate Program &bull; IEEE Xplore Document: 11621659
+            </p>
+            <div>
+              <a href="https://ieeexplore.ieee.org/abstract/document/11621659/" target="_blank" rel="noopener noreferrer" class="btn-modern-primary">
+                View on IEEE Xplore
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <img class="col" src="Assets/278541.jpg" style="width: 650px;" class="img-fluid ps-2" alt="...">
     </div>
   </section>
 
+  <section id="projects" class="section-wrapper">
+    <div class="container">
+      <div class="section-label">Work</div>
+      <h2 class="section-title">Featured Projects</h2>
 
-  <section id="3" class="Projects">
-    <div class="row aos-init aos-animate" data-aos="fade-up">
-      <div class="col" style="margin-top: 25px">
-        <h2>
-          <span class="section-number p-5 me-3 align-text-top">My Project As A Computer Science Student</span>
-        </h2>
-        <p class="mt-3 ps-5 mb-5">
-          Several projects that i have done as a computer science student, i have done several projects with my team and
-          also by myself.
-        </p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img src="Assets/pearlriveraira.png" alt="Pearl River AIRA preview">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Pearl River AIRA</h3>
+              <p class="project-desc">
+                Production e-commerce and catalog website for premium upright acoustic pianos, product specifications, and customer consultation.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">WordPress</span>
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">E-Commerce</span>
+              </div>
+              <a href="https://pearlriveraira.id/" target="_blank" rel="noopener noreferrer" class="btn-modern-primary text-center justify-content-center">Visit Website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img src="Assets/Screenshot 2023-12-14 at 21.39.46.png" alt="Tanaka Guitar preview">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Tanaka Guitar</h3>
+              <p class="project-desc">
+                Online storefront mockup for acoustic and electric guitars plus accessories, implemented without frontend libraries or frameworks.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <a href="https://github.com/AyamNil/Project-HCI" target="_blank" rel="noopener noreferrer" class="btn-modern-outline text-center">GitHub Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img src="Assets/Screenshot 2023-12-21 at 22.32.00.png" alt="Piscis Aquarium preview">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Piscis Aquarium</h3>
+              <p class="project-desc">
+                Educational catalog website showcasing marine species, aquarium exhibits, and visiting information.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+              </div>
+              <a href="https://github.com/AyamNil/piscis" target="_blank" rel="noopener noreferrer" class="btn-modern-outline text-center">GitHub Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img src="Assets/Screenshot 2023-12-22 at 15.58.48.png" alt="SnapCat preview">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">SnapCat</h3>
+              <p class="project-desc">
+                Course team project delivering a social photo-sharing platform for pet owners, built with Laravel, Blade templates, and MySQL.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Laravel</span>
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+              <a href="https://github.com/ZChronoss/web-programming-project" target="_blank" rel="noopener noreferrer" class="btn-modern-outline text-center">GitHub Repository</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <hr>
-    
-    <div class="py-2 row projects-item align-items-centerjustify-content-between OddsPane">
-      <div class="col-md-6 aos-init aos-animate" data-aos="fade-right">
-        <img src="Assets/Screenshot 2023-12-14 at 21.39.46.png" alt="" class="ps-5 img-fluid">
-      </div>
-      <div style="padding: 5px;" class="col-md-5 text-center text-md-end aos-init aos-animate" data-aos="fade-left">
-        <h3>Tanaka Guitar</h3>
-        <p class="mt-4">
-          <b>Tanaka Guitar</b> is a online guitar shop, that has several guitar choice and other guitar essentials.
-          This project is created with HTML, CSS, and Javascript. without any framework nor bootstrap.
-        </p>
-        <a class="btn" role="button" href="https://github.com/AyamNil/Project-HCI">See Repository</a>
-      </div>
-    </div>
-
-    <hr class="p-1">
-
-    <div class="py-2 row projects-item align-items-centerjustify-content-between">
-      <div class="col-md-6 aos-init aos-animate" data-aos="fade-right">
-        <img src="Assets/Screenshot 2023-12-21 at 22.32.00.png" alt="" class="ps-5 img-fluid">
-      </div>
-      <div style="padding: 5px;" class="col-md-5 text-center text-md-end aos-init aos-animate" data-aos="fade-left">
-        <h3>Piscis Aquarium</h3>
-        <p class="mt-4">
-          <b>Piscis Aquarium</b> is a online aquarium, website that shows the species lives in the aquarium. created using html, and css
-        </p>
-        <a class="btn" role="button" href="https://github.com/AyamNil/piscis">See Repository</a>
-      </div>
-    </div>
-
-    <hr class="p-1">
-
-    <div class="py-2 row projects-item align-items-centerjustify-content-between">
-      <div class="col-md-6 aos-init aos-animate" data-aos="fade-right">
-        <img src="Assets/Screenshot 2023-12-22 at 15.58.48.png" alt="" class="ps-5 img-fluid">
-      </div>
-      <div style="padding: 5px;" class="col-md-5 text-center text-md-end aos-init aos-animate" data-aos="fade-left">
-        <h3>SnapCat</h3>
-        <p class="mt-4">
-          <b>SnapCat</b> SnapCat is a social media platform created for cat lovers to post photos
-          of their cat. This is A group project for Web programming course created with laravel framework. 
-        </p>
-        <a class="btn" role="button" href="https://github.com/ZChronoss/web-programming-project">See Repository</a>
-      </div>
-    </div>
-    <hr class="p-1">
   </section>
 
-
-
-
-
-  <footer style="background-color: black !important; color: #c1c1c1!important" class="bg-body-tertiary text-center">
-
-    <div class="container p-4">
-
-      <section class="mb-4">
-
-        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
-            class="fab fa-google"></i></a>
-
-
-        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
-            class="fab fa-instagram"></i></a>
-
-
-        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
-            class="fab fa-linkedin-in"></i></a>
-
-        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
-            class="fab fa-github"></i></a>
-
-      </section>
-      <span class="my-3">
-        Risya Emha Abdillah © 2023
-      </span>
+  <footer class="site-footer text-center">
+    <div class="container">
+      <div class="social-links mb-3">
+        <a href="https://github.com/AyamNil" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:risya890@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div>Risya Emha Abdillah &copy; 2026</div>
+    </div>
   </footer>
 
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://kit.fontawesome.com/17118d186d.js" crossorigin="anonymous"></script>
-</body>
-<script>
-  AOS.init();
-  class TypeWriter {
-    constructor(txtElement, words, wait = 100) {
-      this.txtElement = txtElement;
-      this.words = words;
-      this.txt = '';
-      this.wordIndex = 0;
-      this.wait = parseInt(wait, 5);
-      this.type();
-      this.isDeleting = false;
-    }
-    // instead of creating a prototpe method, we would just create a method within the class - a method called type
-    // everything within the type method is going to be exactly the same thing
+  <script src="main.js"></script>
+  <script>
+    AOS.init({ duration: 600, once: true });
 
-    type() {
-      // Current index of word
-      // We use the modulus operator to get the total length of the words
-      const current = this.wordIndex % this.words.length;
-      // console.log(current);
+    // Lightweight native typewriter
+    const phrases = [
+      "Network Intrusion Detection",
+      "Information Security",
+      "Web & iOS Development"
+    ];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const target = document.getElementById("typewriter");
 
-      // Get full text of current word
-      const fullTxt = this.words[current];
-      // console.log(fullTxt);
-
-      // Check to see if it's in the deleting state
-      if (this.isDeleting) {
-        // Remove a character
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
+    function typeLoop() {
+      const currentPhrase = phrases[phraseIndex];
+      if (isDeleting) {
+        charIndex--;
+        target.textContent = currentPhrase.substring(0, charIndex);
       } else {
-        // Add a character
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        charIndex++;
+        target.textContent = currentPhrase.substring(0, charIndex);
       }
 
-      // Every half a second output what is in the .txt
-      // Insert txt into element
-      this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+      let speed = isDeleting ? 40 : 80;
 
-      // Initial Type Speed
-      let typeSpeed = 300;
-      if (this.isDeleting) {
-        typeSpeed /= 2;
-      }
-      // Check to see if the word is complete
-      if (!this.isDeleting && this.txt === fullTxt) {
-        // Make pause at end
-        typeSpeed = this.wait;
-        // Set isDeleting to true
-        this.isDeleting = true;
-      } else if (this.isDeleting && this.txt === '') {
-        // Set isDeleting back to false
-        this.isDeleting = false;
-        // Move to the next word
-        this.wordIndex++;
-        // Pause before start typing again
-        typeSpeed = 500;
+      if (!isDeleting && charIndex === currentPhrase.length) {
+        speed = 1800;
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        speed = 400;
       }
 
-
-      // Run it at a certain pace
-      setTimeout(() => this.type(), typeSpeed);
-
+      setTimeout(typeLoop, speed);
     }
-  }
-  // Initialize on DOM Load
-  document.addEventListener('DOMContentLoaded', init);
-
-  // Initialize the app in the init function
-  function init() {
-    const txtElement = document.querySelector('.txt-type');
-    const words = JSON.parse(txtElement.getAttribute('data-words'));
-    const wait = txtElement.getAttribute('data-wait')
-    // Initialize the TypeWriter
-    new TypeWriter(txtElement, words, wait);
-  }
-</script>
-
+    typeLoop();
+  </script>
+</body>
 </html>

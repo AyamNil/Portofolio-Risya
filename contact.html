@@ -1,54 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Risya Emha Abdillah</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="CSS/layout.css">
   <link rel="stylesheet" href="CSS/contact.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/17118d186d.js" crossorigin="anonymous"></script>
 </head>
+<body>
 
-<nav class="navbar bg-white navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid ps-5">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+  <nav class="navbar navbar-expand-lg site-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Risya Emha</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#2">About</a>
+            <a class="nav-link" href="index.html#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#3">Projects</a>
+            <a class="nav-link" href="index.html#experience">Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Contact Me</a>
+            <a class="nav-link" href="index.html#publications">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-<body>
-  <h1>Contact Me</h1>
 
-  <!-- WhatsApp Icon -->
-  <div class="col-12 align-item-center">
-    <a href="https://wa.me/6285211946706" target="_blank">
-      <img src="Assets/whatsapp_icon.png" alt="WhatsApp" class="contact-icon">
-  </a>
+  <main class="contact-section">
+    <div class="container">
+      <div class="contact-card text-center" data-aos="fade-up">
+        <div class="section-label">Connect</div>
+        <h1 class="section-title mb-3">Get in Touch</h1>
+        <p class="text-secondary mb-4">
+          Feel free to reach out for research collaboration, development inquiries, or general networking.
+        </p>
 
-  <!-- Email Icon -->
-  <a href="mailto:risya890@gmail.com" target="_blank">
-      <img src="Assets/email_icon.png" alt="Email" class="contact-icon">
-  </a>
-  </div>
+        <div class="contact-options">
+          <a href="https://wa.me/6285211946706" target="_blank" rel="noopener noreferrer" class="contact-btn">
+            <img src="Assets/whatsapp_icon.png" alt="WhatsApp">
+            <span>WhatsApp</span>
+          </a>
+          <a href="mailto:risya890@gmail.com" class="contact-btn">
+            <img src="Assets/email_icon.png" alt="Email">
+            <span>Email</span>
+          </a>
+          <a href="https://github.com/AyamNil" target="_blank" rel="noopener noreferrer" class="contact-btn">
+            <i class="fab fa-github fa-lg"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer text-center">
+    <div class="container">
+      <div>Risya Emha Abdillah &copy; 2026</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({ duration: 600, once: true });
+  </script>
 </body>
-
 </html>
